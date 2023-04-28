@@ -1,0 +1,12 @@
+cucumber.properties(
+        plugin = {"html:target/testResult/basic-cucumber-report",
+        "json:target/testResult/basic-report/cucumber.json",
+         "pretty:target/testResult/basic-report/cucumber-pretty.txt",
+         "usage:target/testResult/basic-report/cucumber-usage.json",
+         "junit:target/testResult/basic-report/cucumber-results.xml",
+         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+         },
+        features = "src//test//resources//features//ios//AuraAllContentOnly.feature",
+        glue = "com.nttdata.testframework.novum.cucumber.glue.stepdefinitions",
+        tags = ""
+)
